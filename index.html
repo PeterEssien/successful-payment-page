@@ -2,13 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Successful Payment</title>
+
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap">
+
+  <meta name="description" content="A simple payment success page.">
+  <meta name="theme-color" content="#d9a7c7">
+
+  <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico" />
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://unpkg.com/">
+  <link rel="preload" as="fetch" crossorigin="anonymous" type="application/json" href="./success-confetti-animation.json">
 </head>
 <body>
-  <h1>
-    Successful Payment!
-  </h1>
+  <div class="card">
+    <lottie-player
+      class="card__lottie-player"
+      src="./success-confetti-animation.json"
+      background="transparent"
+      speed="1"
+      autoplay>
+    </lottie-player>
+    <div class="text fade-in">
+      <p class="text__amount">&#x20b9 10,000</p>
+      <p class="text__header">Payment Successful</p>
+      <p class="text__subheader">Your payment has been processed. Details of the transaction are available <a href="#">here</a>.</p>
+      <button class="text__button">START TRADING</button>
+      <p class="text__footer"><img src="./shield.svg" width="20px" height="20px" alt="Shield icon">Your bank account details are safe and secure with us.</p>
+    </div>
+  </div>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>

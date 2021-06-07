@@ -1,0 +1,19 @@
+{
+  "name": "successful-payment-page",
+  "version": "1.0.0",
+  "description": "A simple payment successful page.",
+  "repository": "https://github.com/darshancc23/successful-payment-page.git",
+  "author": "C C Darshan Thimmaiah <darshancc23@gmail.com>",
+  "scripts": {
+    "build": "parcel build index.html --public-url ./"
+  },
+  "dependencies": {
+    "parcel-bundler": "1.12.5"
+  },
+  "devDependencies": {
+    "parcel-plugin-static-files-copy": "2.6.0"
+  },
+  "staticFiles": {
+    "staticPath": ["./success-confetti-animation.json"]
+}
+}
